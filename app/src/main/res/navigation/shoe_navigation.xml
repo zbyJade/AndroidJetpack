@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_navigation"
+        app:startDestination="@+id/navigation_home"
+        tools:ignore="UnusedNavigation">
+
+    <fragment
+            android:id="@+id/navigation_home"
+            android:name="com.zc.androidjetpack.ui.fragment.shoe.FragmentHome"
+            android:label="homeFragment"
+            tools:layout="@layout/fragment_home" />
+
+    <fragment
+            android:id="@+id/navigation_sorts"
+            android:name="com.zc.androidjetpack.ui.fragment.shoe.FragmentSorts"
+            android:label="fragment_sorts"
+            tools:layout="@layout/fragment_sorts" />
+
+    <fragment
+            android:id="@+id/navigation_like"
+            android:name="com.zc.androidjetpack.ui.fragment.shoe.FragmentLike"
+            android:label="likeFragment"
+            tools:layout="@layout/fragment_like" />
+
+    <fragment
+            android:id="@+id/navigation_me"
+            android:name="com.zc.androidjetpack.ui.fragment.shoe.FragmentMe"
+            android:label="meFragment"
+            tools:layout="@layout/fragment_me" />
+
+</navigation>

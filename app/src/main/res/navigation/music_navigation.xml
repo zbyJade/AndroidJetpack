@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_navigation"
+        app:startDestination="@+id/navigation_music"
+        tools:ignore="UnusedNavigation">
+
+    <fragment
+            android:id="@+id/navigation_home"
+            android:name="com.zc.androidjetpack.ui.fragment.music.FragmentHome"
+            android:label="homeFragment"
+            tools:layout="@layout/fragment_home" />
+
+    <fragment
+            android:id="@+id/navigation_music"
+            android:name="com.zc.androidjetpack.ui.fragment.music.FragmentMusic"
+            android:label="fragment_music"
+            tools:layout="@layout/fragment_music" />
+
+    <fragment
+            android:id="@+id/navigation_me"
+            android:name="com.zc.androidjetpack.ui.fragment.music.FragmentMe"
+            android:label="meFragment"
+            tools:layout="@layout/fragment_me" />
+
+</navigation>

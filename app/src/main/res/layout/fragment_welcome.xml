@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        style="@style/ZeroZero.CenterHorizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.45"
+        android:src="@drawable/welcome_bg"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bg"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        android:textColor="@color/textPrimary"
+        android:gravity="center"
+        android:text="Welcome Jetpack \n Let's Begin"
+        android:textSize="@dimen/txt_larger_size"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/CommonButtonStyle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        android:text="Login"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/CommonButtonStyle"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

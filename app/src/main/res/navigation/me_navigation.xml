@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/me_navigation"
+    app:startDestination="@+id/fragmentUpdatePwd"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/fragmentUpdatePwd"
+        android:name="com.zc.androidjetpack.ui.fragment.mine.UpdatePwdFragment"
+        android:label="fragment_update_pwd"
+        tools:layout="@layout/fragment_update_pwd" />
+    <fragment
+        android:id="@+id/fragmentAboutWe"
+        android:name="com.zc.androidjetpack.ui.fragment.mine.AboutWeFragment"
+        android:label="fragment_about_we"
+        tools:layout="@layout/fragment_about_we" />
+    <fragment
+        android:id="@+id/fragmentEditUser"
+        android:name="com.zc.androidjetpack.ui.fragment.mine.EditUserFragment"
+        android:label="fragment_edit_user"
+        tools:layout="@layout/fragment_edit_user" />
+</navigation>
